@@ -1,0 +1,13 @@
+<h2>Presidents of Ireland!</h2>
+
+<!--Looping through and array of objects-->
+<ul>
+    <li *ngFor="let president of presidents">{{ president.name }} {{ president.term }}</li>
+</ul>
+
+<!--Alternative way of looping, use ordered list-->
+<ol>
+    @for(president of presidents;track president) {
+        <li>{{ president.name }}</li>
+    }
+</ol>
